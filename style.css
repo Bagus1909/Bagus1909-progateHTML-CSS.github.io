@@ -1,0 +1,244 @@
+body, div, section, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.title-section {
+    text-align: center;
+}
+
+.title-section h2{
+    font-weight: 900;
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+section {
+    padding: 50px 0;
+}
+
+/* NAVBAR */
+header {
+    background-color: rgb(71, 71, 71);
+    
+}
+nav .nav-logo a{
+    color: white ;
+    letter-spacing: 8px;
+}
+nav .nav-list a{
+    color: white;
+    display: block;
+    margin: 0 15px;
+}
+nav .nav-list ul {
+    display: flex;
+}
+
+nav {
+    display: flex;
+    color: white;
+    align-items: center;
+}
+
+.hamburger {
+    display: none;
+    
+}
+
+
+/* HERO */
+#hero img {
+    width: 350px;
+}
+#hero {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+#hero h1 {
+    font-size: 120px;
+    font-weight: 900;
+    letter-spacing: 20px;
+}
+
+#hero span {
+    color: yellow;
+}
+#hero p {
+    font-size: 80px;
+    font-weight: 100;
+    opacity: 0.7;
+}
+
+/* TENTANG SAYA */
+#tentang-saya{
+    background-color: #dbdbdb;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+#tentang-saya p{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+
+/* PROYEK CONTOH */
+.proyek-item img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px #888888;
+}
+
+.proyek-item {
+    margin: 30px;
+    text-align: center;
+    width: 30%;
+}
+
+.proyek-item p{
+    margin: 10px auto;
+}
+
+.proyek-img {
+    display: flex;
+}
+
+/* HUBUNGI SAYA */
+#hubungi-saya {
+    background-color: #dbdbdb;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+#hubungi-saya .title-section h2 {
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-item {
+    width: 700px;
+}
+
+.form-item input, textarea{
+    width: 100%;
+    margin: 8px auto;
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.btn-kirim {
+    background-color: #d6a852;
+    padding: 10px 150px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer .container {
+    background-color: #696969;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer a {
+    color: white;
+}
+
+.footer-list a {
+    display: block;
+    margin: 10px 0;
+}
+
+/* SMARTPHONE */
+@media (max-width:480px) {
+    .nav-list {
+        display: none;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+    }
+    .hamburger-item {
+        border: 2px solid #000;
+        width: 30px;
+        margin: 5px;
+    }
+
+    /* HERO */
+    #hero img {
+        display: none;
+    }
+    #hero h1 {
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: 10px;
+    }
+    #hero p {
+        font-size: 20px;
+        font-weight: 100;
+        opacity: 0.7;
+    }
+
+    /* PROYEK CONTOH */
+    .proyek-img {
+        flex-direction: column;
+    }
+    .proyek-item {
+        text-align: center;
+        width: 80%;
+    }
+
+    /* HUBUNGI SAYA */
+    .form-item {
+        width: 100%;
+    }
+
+    /* FOOTER */
+    footer .container{
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-list {
+        display: none;
+    }
+}
